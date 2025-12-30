@@ -79,6 +79,7 @@ class FileRenamer:
             try:
                 new_name = self.pattern.format(
                     index=index,
+                    index1=index + 1,  # 1-based index for convenience
                     original=stem,
                     total=total
                 )
